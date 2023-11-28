@@ -1,0 +1,358 @@
+package ru.mastercond;
+
+//region ДАННЫЕ СОТРУДНИКА
+
+//  1.  ФИО, ДАТА РОЖДЕНИЯ
+//          SOTRUDNIK_FIO, SOTRUDNIK_DATAROZHDENIJA
+//  2.  ИНН, СНИЛС
+//          SOTRUDNIK_INN, SOTRUDNIK_INNDATA SOTRUDNIK_SNILS, SOTRUDNIK_SNILSDATA
+//  3.  Опыт работы, резюме
+//          SOTRUDNIK_OPIT
+//  4.  Семейное положение, дети
+//          SOTRUDNIK_SEMJA
+//  5.  Образование, курсы повышения квалификации
+//          SOTRUDNIK_OBRAZOVANIJE
+//  6.  Должность
+//          SOTRUDNIK_DOLZHNOST
+//  7.  Должностные обязанности (должностная инструкция)
+//          SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA
+//  8.  Текущий трудовой договор, договор подряда и тд (тип договора), дата договора, ID моей организации
+//          SOTRUDNIK_DOGOVOR, SOTRUDNIK_DOGOVORTYPE, SOTRUDNIK_DOGOVORDATA, SOTRUDNIK_IDMYCOMPANY
+//  9.  Водитель в организации, наличие прав управления авто (есть, нет), дата первичного получения прав, окончание срока действия прав, категория прав (B,C,D)
+//          SOTRUDNIK_VODITEL, SOTRUDNIK_PRAVA, SOTRUDNIK_PRAVADATA,SOTRUDNIK_PRAVADATAOKONCHANIJA, SOTRUDNIK_PRAVAKATEGORIJA
+//  10. ХАРАКТЕРИСТИКА
+//          SOTRUDNIK_CHARAKTERISTIKA
+//  11. ЭФФЕКТИВНОСТЬ СОТРУДНИКА (число)
+//          SOTRUDNIK_EFFEKTIVNOST
+//  12. ДАТА УВОЛЬНЕНИЯ, ДОКУМЕНТ ОБ УВОЛЬНЕНИИ
+//          SOTRUDNIK_DATAUVOLNENIJA, SOTRUDNIK_OSNOVANIJEUVOLNENIJA, SOTRUDNIK_DOCUMENTUVOLNENIJE
+//  13. ПРИМЕЧАНИЕ
+//          SOTRUDNIK_PRIMECHANIE
+
+
+
+
+
+//endregion
+
+
+public class SOTRUDNIK {
+
+
+    private String SOTRUDNIK_FIO;
+    private String SOTRUDNIK_DATAROZHDENIJA;
+    private String SOTRUDNIK_INN;
+    private String SOTRUDNIK_INNDATA;
+    private String SOTRUDNIK_SNILS;
+    private String SOTRUDNIK_SNILSDATA;
+    private String SOTRUDNIK_OPIT;
+    private String SOTRUDNIK_SEMJA;
+    private String SOTRUDNIK_OBRAZOVANIJE;
+    private String SOTRUDNIK_DOLZHNOST;
+    private String SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA;
+    private String SOTRUDNIK_DOGOVOR;
+    private String SOTRUDNIK_DOGOVORTYPE;
+    private String SOTRUDNIK_DOGOVORDATA;
+    private String SOTRUDNIK_IDMYCOMPANY;
+    private String SOTRUDNIK_VODITEL;
+    private String SOTRUDNIK_PRAVA;
+    private String SOTRUDNIK_PRAVADATA;
+    private String SOTRUDNIK_PRAVADATAOKONCHANIJA;
+    private String SOTRUDNIK_PRAVAKATEGORIJA;
+    private String SOTRUDNIK_CHARAKTERISTIKA;
+    private String SOTRUDNIK_EFFEKTIVNOST;
+    private String SOTRUDNIK_DATAUVOLNENIJA;
+    private String SOTRUDNIK_OSNOVANIJEUVOLNENIJA;
+    private String SOTRUDNIK_DOCUMENTUVOLNENIJE;
+    private String SOTRUDNIK_PRIMECHANIE;
+    private String idnumber;
+
+    public SOTRUDNIK (String SOTRUDNIK_FIO,
+            String SOTRUDNIK_DATAROZHDENIJA,
+            String SOTRUDNIK_INN,
+            String SOTRUDNIK_INNDATA,
+            String SOTRUDNIK_SNILS,
+            String SOTRUDNIK_SNILSDATA,
+            String SOTRUDNIK_OPIT,
+            String SOTRUDNIK_SEMJA,
+            String SOTRUDNIK_OBRAZOVANIJE,
+            String SOTRUDNIK_DOLZHNOST,
+            String SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA,
+            String SOTRUDNIK_DOGOVOR,
+            String SOTRUDNIK_DOGOVORTYPE,
+            String SOTRUDNIK_DOGOVORDATA,
+            String SOTRUDNIK_IDMYCOMPANY,
+            String SOTRUDNIK_VODITEL,
+            String SOTRUDNIK_PRAVA,
+            String SOTRUDNIK_PRAVADATA,
+            String SOTRUDNIK_PRAVADATAOKONCHANIJA,
+            String SOTRUDNIK_PRAVAKATEGORIJA,
+            String SOTRUDNIK_CHARAKTERISTIKA,
+            String SOTRUDNIK_EFFEKTIVNOST,
+            String SOTRUDNIK_DATAUVOLNENIJA,
+            String SOTRUDNIK_OSNOVANIJEUVOLNENIJA,
+            String SOTRUDNIK_DOCUMENTUVOLNENIJE,
+            String SOTRUDNIK_PRIMECHANIE,
+            String idnumber) {
+
+
+        this.SOTRUDNIK_FIO=SOTRUDNIK_FIO;
+        this.SOTRUDNIK_DATAROZHDENIJA=SOTRUDNIK_DATAROZHDENIJA;
+        this.SOTRUDNIK_INN=SOTRUDNIK_INN;
+        this.SOTRUDNIK_INNDATA=SOTRUDNIK_INNDATA;
+        this.SOTRUDNIK_SNILS=SOTRUDNIK_SNILS;
+        this.SOTRUDNIK_SNILSDATA=SOTRUDNIK_SNILSDATA;
+        this.SOTRUDNIK_OPIT=SOTRUDNIK_OPIT;
+        this.SOTRUDNIK_SEMJA=SOTRUDNIK_SEMJA;
+        this.SOTRUDNIK_OBRAZOVANIJE=SOTRUDNIK_OBRAZOVANIJE;
+        this.SOTRUDNIK_DOLZHNOST=SOTRUDNIK_DOLZHNOST;
+        this.SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA=SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA;
+        this.SOTRUDNIK_DOGOVOR=SOTRUDNIK_DOGOVOR;
+        this.SOTRUDNIK_DOGOVORTYPE=SOTRUDNIK_DOGOVORTYPE;
+        this.SOTRUDNIK_DOGOVORDATA=SOTRUDNIK_DOGOVORDATA;
+        this.SOTRUDNIK_IDMYCOMPANY=SOTRUDNIK_IDMYCOMPANY;
+        this.SOTRUDNIK_VODITEL=SOTRUDNIK_VODITEL;
+        this.SOTRUDNIK_PRAVA=SOTRUDNIK_PRAVA;
+        this.SOTRUDNIK_PRAVADATA=SOTRUDNIK_PRAVADATA;
+        this.SOTRUDNIK_PRAVADATAOKONCHANIJA=SOTRUDNIK_PRAVADATAOKONCHANIJA;
+        this.SOTRUDNIK_PRAVAKATEGORIJA=SOTRUDNIK_PRAVAKATEGORIJA;
+        this.SOTRUDNIK_CHARAKTERISTIKA=SOTRUDNIK_CHARAKTERISTIKA;
+        this.SOTRUDNIK_EFFEKTIVNOST=SOTRUDNIK_EFFEKTIVNOST;
+        this.SOTRUDNIK_DATAUVOLNENIJA=SOTRUDNIK_DATAUVOLNENIJA;
+        this.SOTRUDNIK_OSNOVANIJEUVOLNENIJA=SOTRUDNIK_OSNOVANIJEUVOLNENIJA;
+        this.SOTRUDNIK_DOCUMENTUVOLNENIJE=SOTRUDNIK_DOCUMENTUVOLNENIJE;
+        this.SOTRUDNIK_PRIMECHANIE=SOTRUDNIK_PRIMECHANIE;
+        this.idnumber = idnumber;
+    }
+
+    public String getSOTRUDNIK_FIO() {
+        return SOTRUDNIK_FIO;
+    }
+
+    public void setSOTRUDNIK_FIO(String SOTRUDNIK_FIO) {
+        this.SOTRUDNIK_FIO = SOTRUDNIK_FIO;
+    }
+
+
+    public String getSOTRUDNIK_DATAROZHDENIJA() {
+        return SOTRUDNIK_DATAROZHDENIJA;
+    }
+
+    public void setSOTRUDNIK_DATAROZHDENIJA(String SOTRUDNIK_DATAROZHDENIJA) {
+        this.SOTRUDNIK_DATAROZHDENIJA = SOTRUDNIK_DATAROZHDENIJA;
+    }
+
+
+    public String getSOTRUDNIK_INN() {
+        return SOTRUDNIK_INN;
+    }
+
+    public void setSOTRUDNIK_INN(String SOTRUDNIK_INN) {
+        this.SOTRUDNIK_INN = SOTRUDNIK_INN;
+    }
+
+
+    public String getSOTRUDNIK_INNDATA() {
+        return SOTRUDNIK_INNDATA;
+    }
+
+    public void setSOTRUDNIK_INNDATA(String SOTRUDNIK_INNDATA) {
+        this.SOTRUDNIK_INNDATA = SOTRUDNIK_INNDATA;
+    }
+
+
+    public String getSOTRUDNIK_SNILS() {
+        return SOTRUDNIK_SNILS;
+    }
+
+    public void setSOTRUDNIK_SNILS(String SOTRUDNIK_SNILS) {
+        this.SOTRUDNIK_SNILS = SOTRUDNIK_SNILS;
+    }
+
+
+    public String getSOTRUDNIK_SNILSDATA() {
+        return SOTRUDNIK_SNILSDATA;
+    }
+
+    public void setSOTRUDNIK_SNILSDATA(String SOTRUDNIK_SNILSDATA) {
+        this.SOTRUDNIK_SNILSDATA = SOTRUDNIK_SNILSDATA;
+    }
+
+
+    public String getSOTRUDNIK_OPIT() {
+        return SOTRUDNIK_OPIT;
+    }
+
+    public void setSOTRUDNIK_OPIT(String SOTRUDNIK_OPIT) {
+        this.SOTRUDNIK_OPIT = SOTRUDNIK_OPIT;
+    }
+
+
+    public String getSOTRUDNIK_SEMJA() {
+        return SOTRUDNIK_SEMJA;
+    }
+
+    public void setSOTRUDNIK_SEMJA(String SOTRUDNIK_SEMJA) {
+        this.SOTRUDNIK_SEMJA = SOTRUDNIK_SEMJA;
+    }
+
+
+    public String getSOTRUDNIK_OBRAZOVANIJE() {
+        return SOTRUDNIK_OBRAZOVANIJE;
+    }
+
+    public void setSOTRUDNIK_OBRAZOVANIJE(String SOTRUDNIK_OBRAZOVANIJE) {
+        this.SOTRUDNIK_OBRAZOVANIJE = SOTRUDNIK_OBRAZOVANIJE;
+    }
+
+
+    public String getSOTRUDNIK_DOLZHNOST() {
+        return SOTRUDNIK_DOLZHNOST;
+    }
+
+    public void setSOTRUDNIK_DOLZHNOST(String SOTRUDNIK_DOLZHNOST) {
+        this.SOTRUDNIK_DOLZHNOST = SOTRUDNIK_DOLZHNOST;
+    }
+
+
+    public String getSOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA() {
+        return SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA;
+    }
+
+    public void setSOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA(String SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA) {
+        this.SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA = SOTRUDNIK_DOLZHNOSTNAJAINSTRUKCIJA;
+    }
+
+
+    public String getSOTRUDNIK_DOGOVOR() {
+        return SOTRUDNIK_DOGOVOR;
+    }
+
+    public void setSOTRUDNIK_DOGOVOR(String SOTRUDNIK_DOGOVOR) {
+        this.SOTRUDNIK_DOGOVOR = SOTRUDNIK_DOGOVOR;
+    }
+
+
+    public String getSOTRUDNIK_DOGOVORTYPE() {
+        return SOTRUDNIK_DOGOVORTYPE;
+    }
+
+    public void setSOTRUDNIK_DOGOVORTYPE(String SOTRUDNIK_DOGOVORTYPE) {
+        this.SOTRUDNIK_DOGOVORTYPE = SOTRUDNIK_DOGOVORTYPE;
+    }
+
+
+    public String getSOTRUDNIK_DOGOVORDATA() {
+        return SOTRUDNIK_DOGOVORDATA;
+    }
+
+    public void setSOTRUDNIK_DOGOVORDATA(String SOTRUDNIK_DOGOVORDATA) {
+        this.SOTRUDNIK_DOGOVORDATA = SOTRUDNIK_DOGOVORDATA;
+    }
+
+
+    public String getSOTRUDNIK_IDMYCOMPANY() {
+        return SOTRUDNIK_IDMYCOMPANY;
+    }
+
+    public void setSOTRUDNIK_IDMYCOMPANY(String SOTRUDNIK_IDMYCOMPANY) {
+        this.SOTRUDNIK_IDMYCOMPANY = SOTRUDNIK_IDMYCOMPANY;
+    }
+
+
+    public String getSOTRUDNIK_VODITEL() {
+        return SOTRUDNIK_VODITEL;
+    }
+
+    public void setSOTRUDNIK_VODITEL(String SOTRUDNIK_VODITEL) {
+        this.SOTRUDNIK_VODITEL = SOTRUDNIK_VODITEL;
+    }
+
+
+    public String getSOTRUDNIK_PRAVA() {
+        return SOTRUDNIK_PRAVA;
+    }
+
+    public void setSOTRUDNIK_PRAVA(String SOTRUDNIK_PRAVA) {
+        this.SOTRUDNIK_PRAVA = SOTRUDNIK_PRAVA;
+    }
+
+
+    public String getSOTRUDNIK_PRAVADATAOKONCHANIJA() {
+        return SOTRUDNIK_PRAVADATAOKONCHANIJA;
+    }
+
+    public void setSOTRUDNIK_PRAVADATAOKONCHANIJA(String SOTRUDNIK_PRAVADATAOKONCHANIJA) {
+        this.SOTRUDNIK_PRAVADATAOKONCHANIJA = SOTRUDNIK_PRAVADATAOKONCHANIJA;
+    }
+
+
+    public String getSOTRUDNIK_PRAVAKATEGORIJA() {
+        return SOTRUDNIK_PRAVAKATEGORIJA;
+    }
+
+    public void setSOTRUDNIK_PRAVAKATEGORIJA(String SOTRUDNIK_PRAVAKATEGORIJA) {
+        this.SOTRUDNIK_PRAVAKATEGORIJA = SOTRUDNIK_PRAVAKATEGORIJA;
+    }
+
+
+    public String getSOTRUDNIK_CHARAKTERISTIKA() {
+        return SOTRUDNIK_CHARAKTERISTIKA;
+    }
+
+    public void setSOTRUDNIK_CHARAKTERISTIKA(String SOTRUDNIK_CHARAKTERISTIKA) {
+        this.SOTRUDNIK_CHARAKTERISTIKA = SOTRUDNIK_CHARAKTERISTIKA;
+    }
+
+
+    public String getSOTRUDNIK_EFFEKTIVNOST() {
+        return SOTRUDNIK_EFFEKTIVNOST;
+    }
+
+    public void setSOTRUDNIK_EFFEKTIVNOST(String SOTRUDNIK_EFFEKTIVNOST) {
+        this.SOTRUDNIK_EFFEKTIVNOST = SOTRUDNIK_EFFEKTIVNOST;
+    }
+
+
+    public String getSOTRUDNIK_DATAUVOLNENIJA() {
+        return SOTRUDNIK_DATAUVOLNENIJA;
+    }
+
+    public void setSOTRUDNIK_DATAUVOLNENIJA(String SOTRUDNIK_DATAUVOLNENIJA) {
+        this.SOTRUDNIK_DATAUVOLNENIJA = SOTRUDNIK_DATAUVOLNENIJA;
+    }
+
+
+    public String getSOTRUDNIK_OSNOVANIJEUVOLNENIJA() {
+        return SOTRUDNIK_OSNOVANIJEUVOLNENIJA;
+    }
+
+    public void setSOTRUDNIK_OSNOVANIJEUVOLNENIJA(String SOTRUDNIK_OSNOVANIJEUVOLNENIJA) {
+        this.SOTRUDNIK_OSNOVANIJEUVOLNENIJA = SOTRUDNIK_OSNOVANIJEUVOLNENIJA;
+    }
+
+
+    public String getSOTRUDNIK_DOCUMENTUVOLNENIJE() {
+        return SOTRUDNIK_DOCUMENTUVOLNENIJE;
+    }
+
+    public void setSOTRUDNIK_DOCUMENTUVOLNENIJE(String SOTRUDNIK_DOCUMENTUVOLNENIJE) {
+        this.SOTRUDNIK_DOCUMENTUVOLNENIJE = SOTRUDNIK_DOCUMENTUVOLNENIJE;
+    }
+
+
+    public String getSOTRUDNIK_PRIMECHANIE() {
+        return SOTRUDNIK_PRIMECHANIE;
+    }
+
+    public void setSOTRUDNIK_PRIMECHANIE(String SOTRUDNIK_PRIMECHANIE) {
+        this.SOTRUDNIK_PRIMECHANIE = SOTRUDNIK_PRIMECHANIE;
+    }
+
+
+
+    public String getidnumber() {
+        return idnumber;
+    }
+
+}
