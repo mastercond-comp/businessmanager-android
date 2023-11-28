@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/LLContainer"
+     android:layout_width="1250dp"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="left|center"
+     android:background="#55e8f5e9"
+     android:padding="10dp">
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки синхронизации" 
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        />
+        
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Данные для синхронизации с сервером REDIS" 
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Адрес REDIS-сервера:" />
+
+    <EditText
+        android:id="@+id/redisserver_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "www.xyz.ru"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Порт REDIS-сервера (обычно 6379):" />
+
+    <EditText
+        android:id="@+id/redisserver_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "6379"'
+        />
+
+    
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пароль авторизации:" />
+
+    <EditText
+        android:id="@+id/redisserver_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+
+        <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:id="@+id/buttonsaveftpsettings"
+           android:text="Сохранить настройки REDIS"/>
+           
+        <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:id="@+id/redissync"
+           android:text="Тест соединения с сервером Redis"/>
+        
+</LinearLayout>

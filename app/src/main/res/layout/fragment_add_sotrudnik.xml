@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/LLContainer"
+     android:layout_width="1250dp"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="left|center"
+     android:background="#55e8f5e9"
+     android:padding="10dp">
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить сотрудника" 
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        />
+
+
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="ФИО сотрудника:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_fio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "Иванов Иван Иванович"'
+        />
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Должность:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_dolzhnost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />     
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Дата рождения:" 
+        />
+
+<EditText
+        android:id="@+id/sotrudnik_datarozhdenija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "01 января 1970"'
+        />
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Место рождения:" 
+        />
+
+<EditText
+        android:id="@+id/sotrudnik_datarozhdenija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "г. Санкт-Петербург"'
+        />
+
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Паспортные данные (серия, номер, когда и кем выдан):" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_passport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="СНИЛС:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_snils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Дата выдачи СНИЛС:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_snilsdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+         
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Номер полиса ОМС:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_oms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />     
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Страховая компания ОМС:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_omscompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />       
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Образование:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_obrazovanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />     
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Опыт работы:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_opitraboti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />     
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Семейное положение:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Дата приема на работу (дата договора):" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_datapriemanarabotu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />          
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Водительское удостоверение (номер):" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_prava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />     
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Дата выдачи водительского удостоверения:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/sotrudnik_pravadata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />     
+
+
+
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="17dp"
+        android:id="@+id/buttonaddsotrudnik"
+        android:text="Добавить в базу сотрудника"/>
+        
+        
+</LinearLayout>
+
+        

@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="#55e8f5e9"
+     android:id="@+id/FragmentRoot"
+     >
+     
+                <LinearLayout android:id="@+id/LLLine1" style="@style/LinearLayoutLineStyle">
+     
+                      <LinearLayout style="@style/LinearLayoutElementStyle" android:id="@+id/LLSdelkiVRabote">
+                      
+                      <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Сделки в работе" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiesdelkivrabote"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         <ListView 
+                           android:id="@+id/ListViewSDELKIVRABOTE" 
+                           android:layout_width="match_parent" 
+                           android:layout_height="295dp" 
+android:layout_marginTop="5dp"                           android:padding="7dp"
+                           android:nestedScrollingEnabled="true"
+                           />
+                            
+                            
+                            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          
+                           <Button
+                            style="@style/ButtonMAINPAGE"
+                            android:id="@+id/butonsdelkivrabotelist_full"
+                            android:text="Все сделки"
+                            android:textSize="10dp"/>
+                            
+                              
+                          
+                            </LinearLayout >
+                      </LinearLayout>   
+                      
+                      
+                      <LinearLayout style="@style/LinearLayoutElementStyle" android:id="@+id/LLSdelanoPredlozhenie">
+                      
+                           
+                            <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Сделано предложение" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiesdelanopredlozhenie"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         <ListView 
+                           android:id="@+id/ListViewSDELKIEND" 
+                           android:layout_width="match_parent" 
+                           android:layout_height="295dp" 
+android:layout_marginTop="5dp"                           android:padding="7dp"
+                           android:nestedScrollingEnabled="true"
+                           />
+                            
+                            
+                            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          
+                           <Button
+                            style="@style/ButtonMAINPAGE"
+                            android:id="@+id/butonsdelkivrabotelist_full_2"
+                            android:text="Все сделки"
+                            android:textSize="10dp"/>
+                            
+                              
+                          
+                            </LinearLayout >
+                      </LinearLayout>   
+                      
+                      
+                      
+                      <LinearLayout style="@style/LinearLayoutElementStyle" 
+android:id="@+id/LLSvodnieDannie">
+
+ <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Сводные данные" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiesvodniedannie"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+                           
+                           <TextView 
+                            android:id="@+id/svodniedannie_oks"
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginTop="12dp" 
+                            android:layout_marginLeft="7dp"                           
+                            android:textStyle="bold"
+                            />
+                           
+                           <TextView 
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="7dp"                            
+                            android:text="всего в базе"
+                            />
+                            
+                            <TextView 
+                            android:id="@+id/svodniedannie_summasdelok"
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginTop="5dp" 
+                            android:layout_marginLeft="7dp"                           
+                            android:textStyle="bold"/>
+                            
+                            
+                            <TextView 
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="7dp"                            
+                            android:text="общая стоимость реализованных сделок"
+                            />
+                            
+                          <TextView 
+                            android:id="@+id/svodniedannie_summtovarov"
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="7dp" 
+                            android:layout_marginTop="5dp"                    
+                            android:textStyle="bold"/>
+                          
+                            
+                            <TextView 
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="7dp"                            
+                            android:text="стоимость поставленных товаров"
+                            />
+                            
+                            <TextView 
+                            android:id="@+id/svodniedannie_summuslug"
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="7dp" 
+                            android:layout_marginTop="5dp"                 
+                            android:textStyle="bold"/>
+                            
+                            
+                            <TextView 
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="7dp"                            
+                            android:text="стоимость оказанных услуг"
+                            />
+                            
+                            
+                            
+                         
+                      </LinearLayout>  
+                      
+                       <LinearLayout style="@style/LinearLayoutElementStyle" android:id="@+id/LLSotrudniki">
+                        
+                         <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Дела" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiesotrudniki"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         
+                      </LinearLayout>   
+                       
+                      
+                         </LinearLayout>  
+                      
+                      
+                      
+                      
+                  <LinearLayout android:id="@+id/LLLine2" style="@style/LinearLayoutLineStyle">
+     
+     
+                      <LinearLayout style="@style/LinearLayoutElementStyle" 
+android:id="@+id/LLMiniSklad">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Заканчивающиеся товары" />
+
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiesklad"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                        
+                      </LinearLayout>   
+                        
+                      
+                      
+                      <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLPotencClients">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Сотрудники" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiepotencclients"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         
+                      </LinearLayout>   
+                        
+                      
+                      
+                      
+                     <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLVoronkaProdazh">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Диаграмма продаж" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritievoronkaprodazh"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="5dp"
+                             android:orientation="horizontal">
+
+                             <Button
+                                 style="@style/ButtonUPMENUStyle"
+                                 android:id="@+id/buttondiagrammpokolvu"
+                                 android:text="По количеству"
+                                 />
+
+                             <Button
+                                 style="@style/ButtonUPMENUStyle"
+                                 android:id="@+id/buttondiagrammpokachestvu"
+                                 android:text="По качеству"
+                                 />
+
+
+                         </LinearLayout>
+     
+                         <LinearLayout 
+                            android:layout_width="match_parent" 
+                            android:layout_height="match_parent" 
+                            android:layout_marginTop="5dp"
+                            android:padding="7dp"     
+                            android:orientation="horizontal">
+                            
+                                 <LinearLayout 
+                                  android:layout_width="136dp" 
+                                  android:layout_height="match_parent"   
+                                  android:orientation="vertical"
+                                  >
+                                          
+                                          
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#6a5acd"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc1"
+                                          /> 
+                                          
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#6a5acd"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc11"
+                                          /> 
+                                          
+                                          
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#6a5acd"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc111"
+                                          /> 
+                                          
+                                          
+                                          
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#cd5c5c"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc2"
+                                          /> 
+                                          
+                                           
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#cd5c5c"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc22"
+                                          /> 
+                                          
+                                          
+                                           
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#FFE4B5"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc3"
+                                          /> 
+                                          
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#FFE4B5"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc33"
+                                          /> 
+                                          
+                                          
+                                           
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#3caa3c"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc4"
+                                          /> 
+                                          
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text=""
+                                           android:background="#3caa3c"
+                                           android:layout_gravity="center"
+                                           android:id="@+id/vproc44"
+                                          /> 
+                                          
+                                 </LinearLayout>
+                                 
+                                 
+                                 <LinearLayout 
+                                  android:layout_width="136dp" 
+                                  android:layout_height="match_parent" 
+                                  android:layout_marginLeft="5dp"   
+                                  android:orientation="vertical"
+                                  android:gravity="left">
+                                          
+                                          <TextView 
+                                           android:layout_width="match_parent" 
+                                           android:layout_height="wrap_content"                            
+                                           android:text="направлено предложений:"
+                                          /> 
+                            
+                                          <TextView 
+                                            android:layout_width="match_parent" 
+                                            android:layout_height="wrap_content"                            
+                                            android:id="@+id/voronkapredlozhenija"
+                                            android:textStyle="bold"
+                                            android:text=""
+                                          /> 
+                            
+                                          <TextView 
+                                            android:layout_width="match_parent" 
+                                            android:layout_height="wrap_content"                            
+                                            android:text="отказы:"
+                                          /> 
+                            
+                                          <TextView 
+                                            android:layout_width="match_parent" 
+                                            android:layout_height="wrap_content"                            
+                                            android:id="@+id/voronkaotkazi"
+                                            android:textStyle="bold"
+                                            android:text=""
+                                           /> 
+                            
+                                          <TextView 
+                                            android:layout_width="match_parent" 
+                                            android:layout_height="wrap_content"                            
+                                            android:text="на согласовании:"
+                                          /> 
+                            
+                                          <TextView 
+                                            android:layout_width="match_parent" 
+                                            android:layout_height="wrap_content"                            
+                                            android:id="@+id/voronkasoglasovanie"
+                                            android:textStyle="bold"
+                                            android:text=""
+                                          /> 
+                            
+                            
+                                          <TextView 
+                                            android:layout_width="match_parent" 
+                                            android:layout_height="wrap_content"                            
+                                            android:text="в работе"
+                                          /> 
+                            
+                                          <TextView 
+                                            android:layout_width="match_parent" 
+                                            android:layout_height="wrap_content"                            
+                                            android:id="@+id/voronkavrabote"
+                                            android:textStyle="bold"
+                                            android:text=""
+                                           /> 
+                                          
+                                 </LinearLayout>
+                            
+                            </LinearLayout>
+                         
+                      </LinearLayout>   
+                       
+                       
+                       <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLFinance">
+                        
+                         <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Финансы" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiefinance"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         
+                      </LinearLayout>   
+                       
+                                      
+               </LinearLayout>
+               
+               
+               
+               
+                <LinearLayout android:id="@+id/LLLine3"  style="@style/LinearLayoutLineStyle">
+     
+     
+                      <LinearLayout style="@style/LinearLayoutElementStyle" 
+android:id="@+id/LLSdelkiSProblemami">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Сделки с проблемами" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiesdelkisproblemami"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         <ListView 
+                           android:id="@+id/ListViewSDELKIPROBLEM" 
+                           android:layout_width="match_parent" 
+                           android:layout_height="295dp" 
+android:layout_marginTop="5dp"                           android:padding="7dp"
+                           android:nestedScrollingEnabled="true"
+                           />
+                            
+                            
+                            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          
+                           <Button
+                            style="@style/ButtonMAINPAGE"
+                            android:id="@+id/buttonsdelkiproblem_full"
+                            android:text="Все сделки"
+                            android:textSize="10dp"/>
+                            
+                              
+                          
+                            </LinearLayout >
+                      </LinearLayout>  
+                      
+                      
+                       <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLCalendar">
+                        
+                         <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Деловой календарь" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiedelovojkalendar"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                                               </LinearLayout>  
+                      
+                        <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLDolzhniki">
+                        
+                         <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Должники" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiedolzhniki"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+                         
+                      </LinearLayout>  
+                      
+                      
+                      
+                      
+                        <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLNormDok">
+                        
+                         <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Нормативные документы" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritienormdoc"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                        
+                          
+                            
+                            <ListView 
+                           android:id="@+id/ListViewNORMDOC" 
+                           android:layout_width="match_parent" 
+                           android:layout_height="295dp" 
+android:layout_marginTop="5dp"                           android:padding="7dp"
+                           android:nestedScrollingEnabled="true"
+                           />
+                            
+                            
+                            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          
+                           <Button
+                            style="@style/ButtonMAINPAGE"
+                            android:id="@+id/butonnormdoclist_full"
+                            android:text="Все документы"
+                            android:textSize="10dp"/>
+                            
+                              
+                          
+                            </LinearLayout >
+                           
+                 
+                          
+                      </LinearLayout>  
+                  </LinearLayout>  
+                  
+                  
+                  
+                    <LinearLayout android:id="@+id/LLLine4" style="@style/LinearLayoutLineStyle">
+     
+     
+                      <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLRashodi">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Расходы" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritierashody"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         
+                           
+                                 
+                      </LinearLayout> 
+                      
+                      
+                          <LinearLayout style="@style/LinearLayoutElementStyle" android:id="@+id/LLAvto"> 
+                         <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Автотранспорт" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritieavto"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         
+                      </LinearLayout> 
+                      
+                      
+                           <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLMail">
+
+                       <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Корреспонденция" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiekorrespondence"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                        
+                      </LinearLayout> 
+                      
+                       <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLOsnovnieSredstva">
+                     
+ <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Основные средства" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritieosnovniesredstva"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         
+                      </LinearLayout> 
+                      
+                      
+                    </LinearLayout> 
+                    
+                    
+                    
+                    
+                    
+                    
+                     <LinearLayout android:id="@+id/LLLine5" style="@style/LinearLayoutLineStyle">
+     
+     
+                      <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLZametki">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Заметки" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiezametki"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+                           
+                           
+                          <ListView 
+                           android:id="@+id/ListViewZAMETKI" 
+                           android:layout_width="match_parent" 
+                           android:layout_height="295dp"
+android:layout_marginTop="5dp"                           android:padding="7dp"
+                           android:nestedScrollingEnabled="true"
+                           />
+                           
+                           
+                            
+                            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          
+                           <Button
+                            style="@style/ButtonMAINPAGE"
+                            android:id="@+id/butonzametkilist_full"
+                            android:text="Все заметки"
+                            android:textSize="10dp"/>
+                            
+                              
+                          
+                            </LinearLayout >
+                           
+                           
+                                 
+                      </LinearLayout> 
+                      
+                        <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLKontragenti">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Контрагенты" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiekontragenti"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                         <ListView 
+                           android:id="@+id/ListViewKONTRAGENTI" 
+                           android:layout_width="match_parent" 
+                           android:layout_height="295dp" 
+android:layout_marginTop="5dp"                           android:padding="7dp"
+                           android:nestedScrollingEnabled="true"
+                           />
+                            
+                            
+                            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          
+                           <Button
+                            style="@style/ButtonMAINPAGE"
+                            android:id="@+id/buttonkontragentilist_full"
+                            android:text="Все контрагенты"
+                            android:textSize="10dp"/>
+                            
+                              
+                          
+                            </LinearLayout >
+                           
+                                 
+                      </LinearLayout> 
+                      
+                      
+                        <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLMyOrgs">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Мои организации" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiemyorgs"
+                            android:text="+"
+                            />  
+                               
+                           </LinearLayout>
+     
+                        <ListView 
+                           android:id="@+id/ListViewMYFIRMS" 
+                           android:layout_width="match_parent" 
+                           android:layout_height="295dp" 
+android:layout_marginTop="5dp"                            android:padding="7dp"
+                           android:nestedScrollingEnabled="true"
+                           />
+                            
+                            
+                            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          
+                           <Button
+                            style="@style/ButtonMAINPAGE"
+                            android:id="@+id/buttonmyfirmslist_full"
+                            android:text="Все мои организации"
+                            android:textSize="10dp"/>
+                           
+                                 
+                      </LinearLayout>  
+                               
+                      </LinearLayout> 
+                      
+                      
+                      
+                      
+                        <LinearLayout style="@style/LinearLayoutElementStyle"
+android:id="@+id/LLSites">
+                        
+                          <LinearLayout style="@style/LinearLayoutElementStyleZagolovokSKnopkoj">
+                      
+                      <TextView style="@style/ZagolovokStyleLineSKnopkoj"
+                           android:text="Сайты" />
+                       <Button
+                            style="@style/ButtonMAINPAGERaskritieWidget"
+                            android:id="@+id/buttonraskritiesajti"
+                            android:text="+"
+                            />
+                               
+                           </LinearLayout>
+
+                            <ListView
+                                android:id="@+id/ListViewSajti"
+                                android:layout_width="match_parent"
+                                android:layout_height="295dp"
+                                android:layout_marginTop="5dp"
+                                android:padding="7dp"
+                                android:nestedScrollingEnabled="true"
+                                />
+                           
+                                 
+                      </LinearLayout> 
+                      
+                      
+                      
+                     </LinearLayout> 
+                     
+                    
+                      
+            <View 
+                 android:layout_width="match_parent"
+                 android:layout_height="20dp"
+                 />
+            
+        </LinearLayout>  

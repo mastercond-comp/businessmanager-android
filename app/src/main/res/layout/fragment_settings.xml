@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/LLContainer"
+     android:layout_width="1250dp"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="left|center"
+     android:background="#55e8f5e9"
+     android:padding="10dp">
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки" 
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        />
+        
+        <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+          <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:id="@+id/buttonexportbd"
+           android:text="Экспорт базы данных"/>
+    
+         <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:layout_marginLeft="17dp"
+           android:id="@+id/buttonimportbd"
+           android:text="Импорт базы данных"/>
+    
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+    
+    <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:id="@+id/buttongeneratekeys"
+           android:text="Сгенерировать ключи RSA"/>
+           
+    <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:layout_marginLeft="17dp"
+           android:id="@+id/buttonimportkeys"
+           android:text="Импортировать ключи RSA в приложение"/>
+           
+    <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:layout_marginLeft="17dp"
+           android:id="@+id/buttonexportkeys"
+           android:text="Экспортировать ключи RSA на диск"/>
+    
+    
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Данные для экспорта-импорта БД на FTP" 
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Адрес FTP-сервера:" />
+
+    <EditText
+        android:id="@+id/ftpserver_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "www.xyz.ru"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Порт FTP-сервера (обычно 21):" />
+
+    <EditText
+        android:id="@+id/ftpserver_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "21"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Имя пользователя:" />
+
+    <EditText
+        android:id="@+id/ftpserver_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "alex"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пароль:" />
+
+    <EditText
+        android:id="@+id/ftpserver_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+
+        <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:id="@+id/buttonsaveftpsettings"
+           android:text="Сохранить настройки FTP"/>
+
+     <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+          <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:id="@+id/buttonexportbdftp"
+           android:text="Экспорт базы данных на FTP"/>
+    
+         <Button
+           style="@style/ButtonPAGE"
+           android:layout_marginTop="17dp"
+           android:layout_marginLeft="17dp"
+           android:id="@+id/buttonimportbdftp"
+           android:text="Импорт базы данных с FTP"/>
+    
+    </LinearLayout>
+    
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Режим отображения" 
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+    
+    <RadioGroup
+        android:id="@+id/radiogroupDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radio_planshet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1" 
+            android:text="Планшет" />
+
+        <RadioButton
+            android:id="@+id/radio_smartphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1" 
+            android:text="Смартфон"/>
+
+      
+    </RadioGroup>
+    
+    
+    
+    
+    
+</LinearLayout>

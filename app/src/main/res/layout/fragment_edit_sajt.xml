@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/LLContainer"
+     android:layout_width="1250dp"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="left|center"
+     android:background="#55e8f5e9"
+     android:padding="10dp">
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать веб-сайт"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        />
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Название сайта:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/site_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "Новый сайт"'
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Адрес сайта:" />
+
+    <EditText
+        android:id="@+id/site_www"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!--region Настройки подключения -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FTP адрес для выгрузки:" />
+
+    <EditText
+        android:id="@+id/site_ftpaddres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Порт FTP-сервера (обычно 21):" />
+
+    <EditText
+        android:id="@+id/site_ftpport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "21"'
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FTP имя пользователя:" />
+
+    <EditText
+        android:id="@+id/site_ftpuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "user"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FTP пароль:" />
+
+    <EditText
+        android:id="@+id/site_ftppassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+
+    <!--endregion-->
+    
+        
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="17dp"
+        android:id="@+id/buttonaddsite"
+        android:text="Добавить в базу сайт"/>
+        
+        
+</LinearLayout>
+
+        

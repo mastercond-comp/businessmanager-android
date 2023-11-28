@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/LLContainer"
+     android:layout_width="1250dp"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="left|center"
+     android:background="#55e8f5e9"
+     android:padding="10dp">
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать автомобиль"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        />
+
+
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Марка автомобиля:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/auto_marka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "ГАЗ Газель"'
+        />
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Госномер автомобиля:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/auto_gosnomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "Х000XX00RUS"'
+        />
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Цвет автомобиля:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/auto_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "Белый"'
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Дата приобретения автомобиля или дата постановки авто на учёт в организации:"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <Spinner
+            android:id="@+id/dataucheta_spinnerday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/days"
+            />
+
+        <Spinner
+            android:id="@+id/dataucheta_spinnermonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/months"
+            />
+
+        <Spinner
+            android:id="@+id/dataucheta_spinneryear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/years"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Документ (основание) о постановке авто на учет в организации:"
+        />
+
+
+    <EditText
+        android:id="@+id/auto_dokumentpostanovkinauchet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Дата документа о постановке на учет в организации:"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <Spinner
+            android:id="@+id/datadokumentaucheta_spinnerday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/days"
+            />
+
+        <Spinner
+            android:id="@+id/datadokumentaucheta_spinnermonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/months"
+            />
+
+        <Spinner
+            android:id="@+id/datadokumentaucheta_spinneryear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/years"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Пробег авто при приобретении или постановке на учет (км):"
+        />
+
+
+    <EditText
+        android:id="@+id/auto_probegzero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Примечание:" 
+        />
+                
+
+    <EditText
+        android:id="@+id/auto_primechanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        />
+
+
+
+
+    <!--region ДОКУМЕНТЫ НА АВТО-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowregdocs"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ДОКУМЕНТЫ НА АВТО"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/sectionautodocuments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Номер ПТС:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_PTSnomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата ПТС:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataPTS_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataPTS_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataPTS_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Номер СТС:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_STSnomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата СТС:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataSTS_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataSTS_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataSTS_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="VIN:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_vin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Номер двигателя:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_dvignomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Владелец авто (ФИО или орг-ция):"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_vladelec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region ТЕХНИЧЕСКИЙ ОСМОТР -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowtehosmotr"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ТЕХ.ОСМОТР"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/sectiontehosmotr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Номер диагностической карты автомобиля:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_diagkartanomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата техосмотра автомобиля:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/datatehosmotra_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/datatehosmotra_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/datatehosmotra_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата следующего техосмотра автомобиля:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/datasledtehosmotra_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/datasledtehosmotra_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/datasledtehosmotra_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region СТРАХОВАНИЕ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowstrahovka"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="СТРАХОВАНИЕ"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/sectionstrahovanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Номер текущей страховки ОСАГО:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_osagonomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата текущей страховки ОСАГО:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataosago_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataosago_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataosago_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Страховая компания:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_osagostrahcompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата окончания текущей страховки ОСАГО:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataendosago_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataendosago_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataendosago_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Номер предыдущей страховки ОСАГО:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_osagoprevnomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата прошлой страховки ОСАГО:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataPREVosago_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataPREVosago_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataPREVosago_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Страховая компания:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_osagoprevstrahcompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата окончания предыдущей страховки ОСАГО:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataendPREVosago_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataendPREVosago_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataendPREVosago_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Номер текущей страховки КАСКО:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_kaskonomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата текущей страховки КАСКО:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/datakasko_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/datakasko_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/datakasko_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Страховая компания:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_kaskostrahcompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата окончания текущей страховки КАСКО:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataendkasko_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataendkasko_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataendkasko_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Номер предыдущей страховки КАСКО:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_kaskoprevnomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата прошлой страховки КАСКО:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataPREVkasko_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataPREVkasko_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataPREVkasko_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Страховая компания:"
+            />
+
+
+        <EditText
+            android:id="@+id/auto_kaskoprevstrahcompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Дата окончания предыдущей страховки КАСКО:"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Spinner
+                android:id="@+id/dataendPREVkasko_spinnerday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/dataendPREVkasko_spinnermonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/months"
+                />
+
+            <Spinner
+                android:id="@+id/dataendPREVkasko_spinneryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/years"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region РАСХОДЫ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowrashody"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="РАСХОДЫ"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/sectionrashody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/sectionaddrashodybuttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+
+            <Button
+                style="@style/ButtonPAGE"
+                android:id="@+id/buttonaddrashody"
+                android:text="Добавить расходы"
+                android:layout_marginLeft="35dp"/>
+
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/ListViewAUTORASHODY"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:isScrollContainer="true"
+            android:padding="7dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="true" />
+
+        <TextView
+            android:id="@+id/stoimost_toplivo_tekyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="Стоимость топлива (текущий год):"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stoimost_toplivo_prevyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="Стоимость топлива (предыдущий год):"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stoimost_zip_tekyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="Стоимость запасных частей (текущий год):"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stoimost_zip_prevyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="Стоимость запасных частей (предыдущий год):"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stoimost_rabotuslug_tekyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="Стоимость работ/услуг (текущий год):"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stoimost_rabotuslug_prevyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="Стоимость работ/услуг (предыдущий год):"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stoimost_itogo_tekyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="ИТОГО (текущий год):"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stoimost_itogo_prevyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="ИТОГО (предыдущий год):"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stoimost_itogo_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="ИТОГО (за всё время):"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+
+    <!--endregion-->
+
+
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="25dp"
+        android:id="@+id/buttonsaveauto"
+        android:text="Сохранить изменения"/>
+
+    <Button
+    style="@style/ButtonPAGE"
+    android:layout_marginTop="25dp"
+    android:id="@+id/buttondelauto"
+    android:text="Удалить автомобиль"/>
+
+
+    <!--region Вспомогательные TextView для Spinner'ов-->
+
+    <TextView
+        android:id="@+id/dataucheta_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataucheta_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataucheta_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+    <TextView
+        android:id="@+id/datadokumentaucheta_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/datadokumentaucheta_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/datadokumentaucheta_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+    <TextView
+        android:id="@+id/dataPTS_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataPTS_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataPTS_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+    <TextView
+        android:id="@+id/dataSTS_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataSTS_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataSTS_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+    <TextView
+        android:id="@+id/datatehosmotra_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/datatehosmotra_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/datatehosmotra_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+    <TextView
+        android:id="@+id/datasledtehosmotra_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/datasledtehosmotra_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/datasledtehosmotra_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+
+    <TextView
+        android:id="@+id/dataosago_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataosago_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataosago_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+    <TextView
+        android:id="@+id/dataendosago_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataendosago_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataendosago_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+    <TextView
+        android:id="@+id/dataPREVosago_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataPREVosago_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataPREVosago_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/dataendPREVosago_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataendPREVosago_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataendPREVosago_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+
+    <TextView
+        android:id="@+id/datakasko_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/datakasko_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/datakasko_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+
+
+    <TextView
+    android:id="@+id/dataendkasko_spinnerday_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:text="1"
+    />
+
+    <TextView
+        android:id="@+id/dataendkasko_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataendkasko_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+
+    <TextView
+        android:id="@+id/dataPREVkasko_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataPREVkasko_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataPREVkasko_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/dataendPREVkasko_spinnerday_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataendPREVkasko_spinnermonth_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1"
+        />
+
+    <TextView
+        android:id="@+id/dataendPREVkasko_spinneryear_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="1980"
+        />
+
+
+    <!--endregion-->
+
+
+</LinearLayout>
+
+        

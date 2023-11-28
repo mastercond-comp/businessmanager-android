@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_addtovarusluga"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_edit_sdelka"
+    >
+    
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+    
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить товар/услугу к сделке" 
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:padding="5dp"
+        />
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Название товара/услуги" 
+        />
+                
+
+    <EditText
+        android:id="@+id/dialog_addtovarusluga_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Картридж для принтера'
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ед.измерения:" />
+
+    <EditText
+        android:id="@+id/dialog_addtovarusluga_edizm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, шт'
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Количество:" />
+
+    <EditText
+        android:id="@+id/dialog_addtovarusluga_kolvo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 5'
+        android:inputType="numberDecimal"
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Цена за единицу:" />
+
+    <EditText
+        android:id="@+id/dialog_addtovarusluga_cenaed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 100'
+        android:inputType="numberDecimal"
+        />
+        
+    <Switch
+        android:id="@+id/tovarusluga_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Тип:"
+        android:textOff="Услуга"
+        android:textOn="Товар" />
+        
+       <TextView
+        android:id="@+id/dialog_addtovarusluga_stoimost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Стоимость:" /> 
+        
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        > 
+       
+       <Button
+        style="@style/ButtonPAGE"
+        android:id="@+id/dialog_neutral_btn"
+        android:text="Рассчитать стоимость"
+        /> 
+        
+    <Button
+        style="@style/ButtonPAGE"
+        android:id="@+id/dialog_positive_btn"
+        android:layout_marginLeft="17dp"
+        android:text="Добавить"
+        />
+        
+    <Button
+        android:id="@+id/dialog_negative_btn"
+        style="@style/ButtonPAGE"
+        android:layout_marginLeft="17dp"
+        android:text=" Отмена"
+        />
+        
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

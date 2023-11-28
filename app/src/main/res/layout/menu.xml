@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- КОД БОКОВОГО НАВИГАЦИОННОГО МЕНЮ (РАСПОЛАГАТЬ В САМОМ КОНЦЕ FRAMELAYOUT) -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MenuLayout"
+    style="@style/ScrollViewMENUStyle">
+
+    <LinearLayout style="@style/LinearLayoutMENUStyle">
+
+        <!-- ПЕРВЫЕ ДВА СИМВОЛА В ЦВЕТЕ УКАЗЫВАЮТ НА ПРОЗРАЧНОСТЬ -->
+
+        <Button
+            android:id="@+id/MenuButton0"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_television_guide"
+            android:text="   Рабочий стол" />
+
+        <Button
+            android:id="@+id/MenuButton1"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_package"
+            android:text="   Сделки" />
+
+        <Button
+            android:id="@+id/MenuButton2"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_account_multiple"
+            android:text="   Контрагенты" />
+
+        <Button
+            android:id="@+id/MenuButton3"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_clapperboard"
+            android:text="   Мои организации" />
+
+        <Button
+            android:id="@+id/MenuButton4"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_cube_outline"
+            android:text="   Товары и услуги" />
+
+
+        <Button
+            android:id="@+id/MenuButton5"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_ticket_account"
+            android:text="   Сотрудники" />
+
+        <Button
+            android:id="@+id/MenuButton13"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_truck"
+            android:text="   Автотранспорт" />
+
+
+        <Button
+            android:id="@+id/MenuButton6"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_store"
+            android:text="   Мини-склад" />
+
+        <Button
+            android:id="@+id/MenuButton7"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_cash_100"
+            android:text="   Финансы" />
+
+        <Button
+            android:id="@+id/MenuButton8"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_cash_100"
+            android:text="   Нормативные документы" />
+
+        <Button
+            android:id="@+id/MenuButton12"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_cash_100"
+            android:text="   Заметки" />
+
+        <Button
+            android:id="@+id/MenuButton9"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_responsive"
+            android:text="   Сайты" />
+
+        <Button
+            android:id="@+id/MenuButton10"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_server_network"
+            android:text="   Синхронизация" />
+
+        <Button
+            android:id="@+id/MenuButton11"
+            style="@style/ButtonMENUStyle"
+            android:drawableLeft="@drawable/ic_cog"
+            android:text="   Настройки" />
+        
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+    <!-- КОНЕЦ КОД МЕНЮ -->

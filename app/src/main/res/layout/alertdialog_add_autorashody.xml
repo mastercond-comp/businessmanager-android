@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_addautorashody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_edit_auto"
+    >
+    
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+    
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать авторасходы к автомобилю"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:padding="5dp"
+        />
+
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="ТИП РАСХОДОВ НА АВТОМОБИЛЬ"
+         android:textSize="16dp"
+         android:textStyle="bold"  />
+
+     <RadioGroup
+         android:id="@+id/radiogroupTYPEAUTORASHODY"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="8dp">
+
+
+         <RadioButton
+            android:id="@+id/radio_typeautorashody_toplivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="(1) ТОПЛИВО" />
+
+         <RadioButton
+             android:id="@+id/radio_typeautorashody_rashodka"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="24dp"
+             android:layout_weight="1"
+             android:text="(2) РАСХОДНЫЕ МАТЕРИАЛЫ (масла, фильтра, колодки, прокладки и т.д.)" />
+
+         <RadioButton
+             android:id="@+id/radio_typeautorashody_zapchast"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="24dp"
+             android:layout_weight="1"
+             android:text="(3) ЗАПАСНЫЕ ЧАСТИ" />
+
+         <RadioButton
+             android:id="@+id/radio_typeautorashody_uslugiremont"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="24dp"
+             android:layout_weight="1"
+             android:text="(4) РАБОТЫ И УСЛУГИ - ДИАГНОСТИКА И РЕМОНТ" />
+
+         <RadioButton
+             android:id="@+id/radio_typeautorashody_uslugiregular"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="24dp"
+             android:layout_weight="1"
+             android:text="(5) РАБОТЫ И УСЛУГИ - РЕГУЛЯРНЫЕ (автомойка, шиномонтаж и т.д.)" />
+
+         <RadioButton
+             android:id="@+id/radio_typeautorashody_parkovka"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="24dp"
+             android:layout_weight="1"
+             android:text="(6) ПАРКОВКА, СТОЯНКА" />
+
+         <RadioButton
+             android:id="@+id/radio_typeautorashody_shtrafi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="24dp"
+             android:layout_weight="1"
+             android:text="(7) ШТРАФЫ" />
+
+         <RadioButton
+             android:id="@+id/radio_typeautorashody_strahovanie"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="24dp"
+             android:layout_weight="1"
+             android:text="(8) АВТОСТРАХОВАНИЕ (ОСАГО, КАСКО)" />
+
+         <RadioButton
+             android:id="@+id/radio_typeautorashody_nalogi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="24dp"
+             android:layout_weight="1"
+             android:text="(9) НАЛОГИ И СБОРЫ" />
+
+     </RadioGroup>
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Наименование расходов"
+        />
+                
+
+    <EditText
+        android:id="@+id/dialog_addautorashody_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Замена колодок'
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ед.измерения:" />
+
+    <EditText
+        android:id="@+id/dialog_addautorashody_edizm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, шт'
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Количество:" />
+
+    <EditText
+        android:id="@+id/dialog_addautorashody_kolvo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 5'
+        android:inputType="numberDecimal"
+        android:text="0"
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Цена за единицу:" />
+
+    <EditText
+        android:id="@+id/dialog_addautorashody_cenaed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 100'
+        android:inputType="numberDecimal"
+        android:text="0"
+        />
+
+
+
+     <TextView
+        android:id="@+id/dialog_addtorashody_stoimost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Стоимость:" /> 
+        
+        
+
+       
+       <Button
+        style="@style/ButtonPAGE"
+        android:id="@+id/dialog_neutral_btn"
+        android:text="Рассчитать стоимость"
+        />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Текущий пробег:" />
+
+            <EditText
+                android:id="@+id/dialog_addautorashody_probeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint='например, 90000'
+                android:inputType="numberDecimal"
+                android:text="0"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Номер чека для проверки в налоговой:" />
+
+            <EditText
+                android:id="@+id/dialog_addautorashody_nomercheka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint='например, 100'
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Номер заказ-наряда (счёта,договора и т.д.) для работ/услуг:" />
+
+            <EditText
+                android:id="@+id/dialog_addautorashody_nomerzakaznarjada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint='например, 100'
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дата совершения расходов (чек, заказ-наряд, договор и т.д.):" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <Spinner
+                    android:id="@+id/autorashodydialogdata_spinnerday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/days"
+                    />
+
+                <Spinner
+                    android:id="@+id/autorashodydialogdata_spinnermonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/months"
+                    />
+
+                <Spinner
+                    android:id="@+id/autorashodydialogdata_spinneryear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/years"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Срок окончания гарантии для запасных частей и работ:" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <Spinner
+                    android:id="@+id/autorashodydialogsrokgarantiidata_spinnerday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/days"
+                    />
+
+                <Spinner
+                    android:id="@+id/autorashodydialogsrokgarantiidata_spinnermonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/months"
+                    />
+
+                <Spinner
+                    android:id="@+id/autorashodydialogsrokgarantiidata_spinneryear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/years"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Срок окончания ресурса запасной части:" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <Spinner
+                    android:id="@+id/autorashodydialogsrokresursadata_spinnerday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/days"
+                    />
+
+                <Spinner
+                    android:id="@+id/autorashodydialogsrokresursadata_spinnermonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/months"
+                    />
+
+                <Spinner
+                    android:id="@+id/autorashodydialogsrokresursadata_spinneryear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/years"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пробег автомобиля, при котором ресурс запасной части заканчивается:" />
+
+            <EditText
+                android:id="@+id/dialog_addautorashody_probegendresurs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint='например, 90000'
+                android:inputType="numberDecimal"
+                android:text="0"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                >
+
+
+            <Button
+                style="@style/ButtonPAGE"
+                android:id="@+id/autorashodyadddialog_positive_btn"
+                android:layout_marginLeft="17dp"
+                android:text="Добавить в авторасходы"
+                />
+
+
+            <Button
+                android:id="@+id/autorashodyadddialog_negative_btn"
+                style="@style/ButtonPAGE"
+                android:layout_marginLeft="17dp"
+                android:text=" Отмена"
+                />
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_radioselecteddb"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Топливо"/>
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_d"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_m"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_y"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_srokgarantii_d"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_srokgarantii_m"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_srokgarantii_y"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_srokresursa_d"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_srokresursa_m"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialog_addautorashody_textview_data_srokresursa_y"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+        
+</LinearLayout>
+
+
+</ScrollView>

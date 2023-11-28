@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/LLContainer"
+     android:layout_width="1250dp"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="left|center"
+     android:background="#55e8f5e9"
+     android:padding="10dp">
+    
+     <TextView
+        android:id="@+id/Zagolovok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Товары"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        />
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        > 
+        
+        <Button
+        style="@style/ButtonPAGE"
+        android:id="@+id/TOVARI_buttonaddtovar"
+        android:text="Добавить товар"/>
+        
+        <Button
+        style="@style/ButtonPAGE"
+        android:id="@+id/TOVARI_buttonselecttovarrazdel"
+        android:layout_marginLeft="17dp"
+        android:text="Товары по разделам"/>
+
+         <Button
+         style="@style/ButtonPAGE"
+         android:id="@+id/TOVARI_buttonuploadwww"
+         android:layout_marginLeft="17dp"
+         android:text="Выгрузить на сайт"/>
+        
+        </LinearLayout>
+    
+     <ListView 
+        android:id="@+id/ListViewTovariWWWList"
+        android:layout_width="match_parent" 
+        android:layout_height="560dp"
+        android:padding="12dp"
+        android:nestedScrollingEnabled="true"
+    />
+    
+</LinearLayout>

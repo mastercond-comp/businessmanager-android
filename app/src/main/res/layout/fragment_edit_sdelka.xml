@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/LLContainer"
+     android:layout_width="1250dp"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="left|center"
+     android:background="#55e8f5e9"
+     android:padding="10dp">
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать сделку" 
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        />
+        
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название сделки:" 
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/sdelka_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например: Поставка запчастей для ООО "Ромашка"'
+        />
+
+
+    <!--region КОНТРАГЕНТ-->
+
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp">
+        
+        
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowkontragent"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="КОНТРАГЕНТ" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+          
+          
+          
+         <Button
+          style="@style/ButtonPAGEsdelki" 
+          android:id="@+id/buttonselectkontragent"
+          android:text="Выбрать" />
+        
+      </LinearLayout>
+      
+      
+      
+      
+      <LinearLayout
+       android:id="@+id/sectionkontragent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp">
+      
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Полное наименование организации" 
+        />
+                
+
+    <EditText
+        android:id="@+id/kontragent_myfullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Общество с ограниченной ответственностью "Эдельвейс"'
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сокращенное наименование организации/ИП:" />
+
+    <EditText
+        android:id="@+id/kontragent_mysokrname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, ООО "Эдельвейс"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ИНН:" />
+
+    <EditText
+        android:id="@+id/kontragent_INN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="КПП:" />
+
+    <EditText
+        android:id="@+id/kontragent_KPP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ОГРН:" />
+
+    <EditText
+        android:id="@+id/kontragent_OGRN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Наименование банка:" />
+
+    <EditText
+        android:id="@+id/kontragent_bankname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, ПАО "Сбербанк"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="БИК банка:" />
+
+    <EditText
+        android:id="@+id/kontragent_bankbik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Корреспондентский счет банка:" />
+
+    <EditText
+        android:id="@+id/kontragent_bankks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Номер расчетного счета в банке:" />
+
+    <EditText
+        android:id="@+id/kontragent_RS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Должность руководителя:" />
+
+    <EditText
+        android:id="@+id/kontragent_rukdolzhnost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Генеральный директор'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="В лице...:" />
+
+    <EditText
+        android:id="@+id/kontragent_vlice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Генерального директора Петрова Евгения Юрьевича, действующего на основании Устава'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ФИО руководителя (сокращенно):" />
+
+    <EditText
+        android:id="@+id/kontragent_FIOruksokr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Петров Е.Ю.'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Юридический адрес:" />
+
+    <EditText
+        android:id="@+id/kontragent_URaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456, г.Москва, ул.Цветочная, 99, офис 50'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Фактический адрес:" />
+
+    <EditText
+        android:id="@+id/kontragent_FACTaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456, г.Москва, ул.Цветочная, 99, офис 50'
+        />
+        
+        
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Почтовый адрес:" />
+        
+        
+         <EditText
+        android:id="@+id/kontragent_POSTaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456, г.Москва, ул.Цветочная, 99, офис 50'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Телефон:" />
+        
+
+    <EditText
+        android:id="@+id/kontragent_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, +7 (495) 123 45 67'
+        />
+        
+        
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ответственный за исполнение Договора:" />
+
+    <EditText
+        android:id="@+id/kontragent_otvetstvennij"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Иванов Иван Иванович'
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Мобильный телефон:" />
+
+    <EditText
+        android:id="@+id/kontragent_MobPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, +7 (964) 123 45 67'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/kontragent_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, test@test.ru'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сайт:" />
+
+    <EditText
+        android:id="@+id/kontragent_www"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, www.abcdef.ru'
+        />
+        
+        
+        
+        
+        </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region МОЯ ОРГАНИЗАЦИЯ-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp">
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowmyorg"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="МОЯ ОРГАНИЗАЦИЯ" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+          
+          <Button
+          style="@style/ButtonPAGEsdelki"  
+          android:id="@+id/buttonselectmyorg"
+          android:text="Выбрать" />
+        
+      </LinearLayout>
+        
+        
+        
+        <LinearLayout
+       android:id="@+id/sectionmyorg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp">
+       
+       
+        
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Полное наименование организации" 
+        />
+                
+
+    <EditText
+        android:id="@+id/my_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Общество с ограниченной ответственностью "Эдельвейс"'
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сокращенное наименование организации/ИП:" />
+
+    <EditText
+        android:id="@+id/my_sokrname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, ООО "Эдельвейс"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ИНН:" />
+
+    <EditText
+        android:id="@+id/my_INN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="КПП:" />
+
+    <EditText
+        android:id="@+id/my_KPP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ОГРН:" />
+
+    <EditText
+        android:id="@+id/my_OGRN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Наименование банка:" />
+
+    <EditText
+        android:id="@+id/my_bankname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, ПАО "Сбербанк"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="БИК банка:" />
+
+    <EditText
+        android:id="@+id/my_bankbik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Корреспондентский счет банка:" />
+
+    <EditText
+        android:id="@+id/my_bankks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Номер расчетного счета в банке:" />
+
+    <EditText
+        android:id="@+id/my_RS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Должность руководителя:" />
+
+    <EditText
+        android:id="@+id/my_rukdolzhnost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Генеральный директор'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="В лице...:" />
+
+    <EditText
+        android:id="@+id/my_vlice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Генерального директора Петрова Евгения Юрьевича, действующего на основании Устава'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ФИО руководителя (сокращенно):" />
+
+    <EditText
+        android:id="@+id/my_FIOruksokr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Петров Е.Ю.'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Юридический адрес:" />
+
+    <EditText
+        android:id="@+id/my_URaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456, г.Москва, ул.Цветочная, 99, офис 50'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Фактический адрес:" />
+
+    <EditText
+        android:id="@+id/my_FACTaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456, г.Москва, ул.Цветочная, 99, офис 50'
+        />
+        
+        
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Почтовый адрес:" />
+        
+        
+         <EditText
+        android:id="@+id/my_POSTaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 123456, г.Москва, ул.Цветочная, 99, офис 50'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Телефон:" />
+        
+
+    <EditText
+        android:id="@+id/my_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, +7 (495) 123 45 67'
+        />
+        
+        
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ответственный за исполнение Договора:" />
+
+    <EditText
+        android:id="@+id/my_otvetstvennij"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Иванов Иван Иванович'
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Мобильный телефон:" />
+
+    <EditText
+        android:id="@+id/my_MobPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, +7 (964) 123 45 67'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/my_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, test@test.ru'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сайт:" />
+
+    <EditText
+        android:id="@+id/my_www"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, www.abcdef.ru'
+        />
+        
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ссылка на логотип:" />
+
+    <EditText
+        android:id="@+id/my_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, www.abcdef.ru/logo.jpg'
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ссылка на изображение печати и подписи:" />
+
+    <EditText
+        android:id="@+id/my_pechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, www.abcdef.ru/pechat.jpg'
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Слоган:" />
+
+    <EditText
+        android:id="@+id/my_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, Лучшие электрики Ленинского района'
+        />
+        
+        
+        </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region УСЛОВИЯ СДЕЛКИ-->
+        
+        <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp">
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowuslovijasdelki"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="УСЛОВИЯ СДЕЛКИ" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+          
+          
+          <Button
+          style="@style/ButtonPAGEsdelki" 
+          android:id="@+id/buttonselectuslovijasdelki"
+          android:text="Выбрать" />
+        
+      </LinearLayout>
+        
+      
+    <LinearLayout
+       android:id="@+id/sectionuslovijasdelki"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp">   
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дата сделки (дата заключения договора):" />
+
+    <EditText
+        android:id="@+id/datadogovora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, ООО "Эдельвейс"'
+        />  
+        
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Номер сделки (номер договора):" />
+
+    <EditText
+        android:id="@+id/nomerdogovora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, ООО "Эдельвейс"'
+        />  
+        
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Город заключения договора:" />
+
+    <EditText
+        android:id="@+id/goroddogovora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, г.Москва'
+        /> 
+        
+        
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Оказываются услуги по:" />
+
+    <EditText
+        android:id="@+id/uslugipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, электромонтажу'
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сроки поставки товаров:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/srokipostavkitovarov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "в течение 5 (пяти) рабочих дней с момента заключения настоящего Договора"'
+        />
+        
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сроки оказания услуг:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/srokiokazanijauslug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например,  "в течение 5 (пяти) рабочих дней с момента заключения настоящего Договора"'
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Условия по оплате товаров:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/uslovijaoplatitovarov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "полная 100% предоплата безналичным путем перечислением денежных средств с расчетного счета Заказчика на расчетный счет Исполнителя"'
+        />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Условия по оплате услуг:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/uslovijaoplatiuslug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "полная 100% предоплата безналичным путем перечислением денежных средств с расчетного счета Заказчика на расчетный счет Исполнителя"'
+        />
+        
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Условия приемки товаров:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/uslovijaprijemkitovarov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "после окончания поставки товаров в случае отсутствия претензий Заказчик и Исполнитель обязуются в день окончания поставки товаров подписать Товарную Накладную"'
+        />
+        
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Условия приемки оказанных услуг:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/uslovijaprijemkiuslug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "после окончания оказания услуг в случае отсутствия претензий Заказчик и Исполнитель обязуются подписать Акт об оказанных услугах в течение 3 (трех) рабочих дней с момента извещения Исполнителем Заказчика об окончании оказания услуг"'
+        />
+        
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Условия гарантии (гарантийные обязательства):" />
+
+    <AutoCompleteTextView
+        android:id="@+id/uslovijagarantii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "Исполнитель предоставляет Заказчику гарантию сроком 1 (один) календарный год на товары и услуги по настоящему Договору, сроки гарантии исчисляются с момента подписания Актов об оказанных услугах и/или Товарных накладных"'
+        />
+        
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Особые условия:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/osobieuslovija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "В случае выявления в ходе сервисно-технического обслуживания оборудования, требующего ремонта, услуги по ремонту такого оборудования оказываются после заключения между Сторонами отдельного договора."'
+        />
+        
+        
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Наименование суда для рассмотрения споров:" />
+
+    <AutoCompleteTextView
+        android:id="@+id/arbitrsud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, "Арбитражный суд г.Москвы"'
+        />
+        
+        
+        </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region ТОВАРЫ И УСЛУГИ-->
+        
+        <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp">
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowtovariuslugi"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="ТОВАРЫ И УСЛУГИ" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+        
+      </LinearLayout>
+      
+        
+       <LinearLayout
+       android:id="@+id/sectiontovariuslugi"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp">  
+       
+       <LinearLayout
+       android:id="@+id/sectionaddtovariuslugibuttons"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="7dp">  
+       
+       <Button
+        style="@style/ButtonPAGE"
+        android:id="@+id/buttonaddtovarusluga"
+        android:text="Добавить товар/услугу" 
+        android:layout_marginLeft="35dp"/>
+        
+        <Button
+        style="@style/ButtonPAGE"
+        android:id="@+id/buttonaddtovaruslugabaza"
+        android:text="Добавить из базы"
+        android:layout_marginLeft="7dp"/> 
+       
+       </LinearLayout>
+       
+       
+       <ListView 
+       android:id="@+id/ListViewTOVARIUSLUGI" 
+       android:layout_width="match_parent" 
+       android:layout_height="match_parent"
+       android:padding="7dp" 
+       android:layout_marginLeft="35dp"
+       android:layout_marginTop="8dp" 
+       android:nestedScrollingEnabled="true" />
+
+       <TextView
+               android:id="@+id/stoimost_tovarov"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="42dp"
+               android:text="Стоимость товаров:"
+               android:textStyle="bold"/>
+
+        <TextView
+               android:id="@+id/stoimost_uslug"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="42dp"
+               android:text="Стоимость услуг:"
+               android:textStyle="bold"/>
+
+        <TextView
+               android:id="@+id/stoimost_itogo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="42dp"
+               android:text="ИТОГО:"
+               android:textStyle="bold"/>
+       
+       </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region ДОКУМЕНТЫ-->
+        
+        <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp" >
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowdocuments"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="ДОКУМЕНТЫ" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+        
+      </LinearLayout>
+      
+     
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:id="@+id/sectiondocuments" >
+     
+     
+        
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:id="@+id/LLkommpredl" >
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowkommpredl"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Коммерческие предложения" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+        
+      </LinearLayout>
+
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="35dp"
+       android:id="@+id/DocsKPs" >
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер коммерческого предложения:" />
+
+      <EditText
+        android:id="@+id/kp_nomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 1' 
+        />
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата коммерческого предложения:" />
+
+      <EditText
+        android:id="@+id/kp_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 11 марта 2019' 
+        />
+        
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="5dp"
+       android:id="@+id/LLkpsbuttons" >
+       
+      <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsavekp"
+            android:text="Сохранить КП"
+            android:layout_marginTop="8dp" 
+             />
+             
+       <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsavekppechat"
+            android:text="Сохранить КП (с печатью)"
+            android:layout_marginTop="8dp" 
+             />
+        </LinearLayout>
+      </LinearLayout>
+      
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+       android:id="@+id/LLtehzakl" >
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowtehzakl"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Технические заключения" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+        
+      </LinearLayout>
+      
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+       android:id="@+id/LLscheta" >
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowscheta"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Счета" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+            
+            
+        
+      </LinearLayout>
+      
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="35dp"
+       android:id="@+id/DocsScheta" >
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер счета:" />
+
+      <EditText
+        android:id="@+id/schet_nomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 1' 
+        />
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата счета:" />
+
+      <EditText
+        android:id="@+id/schet_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 11 марта 2019' 
+        />
+        
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="5dp"
+       android:id="@+id/LLschetabuttons" >
+       
+      <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsaveschet"
+            android:text="Сохранить счет"
+            android:layout_marginTop="8dp" 
+             />
+             
+             <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsaveschetpechat"
+            android:text="Сохранить счет (с печатью)"
+            android:layout_marginTop="8dp" 
+             />
+        </LinearLayout>
+      </LinearLayout>
+      
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+       android:id="@+id/LLdogovor" >
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowdogovor"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Договор" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+          
+      </LinearLayout>
+      
+      <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="35dp"
+           android:id="@+id/LLdogovoributtons" >
+       
+          <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsavedogovor"
+            android:text="Сохранить договор"
+            android:layout_marginTop="8dp" 
+             />
+             
+          <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsavedogovorpechat"
+            android:text="Сохранить договор (с печатью)"
+            android:layout_marginTop="8dp" 
+             />
+        </LinearLayout>
+        
+        
+        
+      
+      
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+       android:id="@+id/LLakt" >
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowakt"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Акты" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+        
+      </LinearLayout>
+
+
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="35dp"
+       android:id="@+id/DocsAkti" >
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер акта:" />
+
+      <EditText
+        android:id="@+id/akt_nomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 1' 
+        />
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата акта:" />
+
+      <EditText
+        android:id="@+id/akt_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 11 марта 2019' 
+        />
+        
+      
+      <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp" >
+
+       
+          <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsaveakt"
+            android:text="Сохранить акт"
+            android:layout_marginTop="8dp" 
+             />
+             
+          <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsaveaktpechat"
+            android:text="Сохранить акт (с печатью)"
+            android:layout_marginTop="8dp" 
+             />
+        </LinearLayout>
+      </LinearLayout>
+      
+      
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+       android:id="@+id/LLnakl" >
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshownakl"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Накладные" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+        
+      </LinearLayout>
+      
+
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="35dp"
+       android:id="@+id/DocsNakladnie" >
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер накладной:" />
+
+      <EditText
+        android:id="@+id/nakl_nomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 1' 
+        />
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата накладной:" />
+
+      <EditText
+        android:id="@+id/nakl_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например, 11 марта 2019' 
+        />
+
+
+
+      <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp" >
+       
+          <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsavenakl"
+            android:text="Сохранить накладную"
+            android:layout_marginTop="8dp" 
+             />
+             
+          <Button
+            style="@style/ButtonPAGEsdelki"
+            android:id="@+id/buttonsavenaklpechat"
+            android:text="Сохранить накладную (с печатью)"
+            android:layout_marginTop="8dp" 
+             />
+        </LinearLayout>
+      </LinearLayout>
+      
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+       android:id="@+id/LLdrdoc" >
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowdrdoc"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Прочие документы" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+        
+      </LinearLayout>
+        
+     </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region СЕКЦИЯ ЗАМЕТКИ-->
+     
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp">
+        
+         <Button
+          style="@style/ButtonRASKRITIE"
+          android:id="@+id/buttonshowzametki"
+          android:text=">" />
+        
+        
+         <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="ЗАМЕТКИ" 
+          android:textSize="16dp"
+          android:textStyle="bold"  />
+        
+      </LinearLayout>
+     
+     
+     <LinearLayout
+       android:id="@+id/sectionzametki"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp">  
+       
+       <LinearLayout
+       android:id="@+id/sectionaddzametka"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="7dp">  
+       
+       <Button
+        style="@style/ButtonPAGE"
+        android:id="@+id/buttonaddzametka"
+        android:text="Добавить заметку" 
+        android:layout_marginLeft="35dp"/>
+        
+       
+       </LinearLayout>
+       
+
+       
+       <ListView 
+       android:id="@+id/ListViewZAMETKI"
+       android:nestedScrollingEnabled="true"
+       android:layout_width="match_parent" 
+       android:layout_height="wrap_content"
+       android:padding="7dp"
+       android:layout_marginLeft="35dp"
+       android:layout_marginTop="8dp" 
+       />
+       
+       
+       </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region РАДИОГРУППА ВЫБОР СТАТУСА СДЕЛКИ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowstatussdelki"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="СТАТУС СДЕЛКИ"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+       <RadioGroup
+        android:id="@+id/radiogroupSTATUS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+
+           <RadioButton
+               android:id="@+id/radio_step1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(1) Направлено коммерческое предложение"/>
+
+           <RadioButton
+               android:id="@+id/radio_step2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(2) Коммерческое предложение не устроило/отклонено/без ответа"/>
+
+           <RadioButton
+               android:id="@+id/radio_step3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(3) Договор на согласовании"/>
+
+           <RadioButton
+               android:id="@+id/radio_step4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(4) Договор подписан - этап исполнения сделки"/>
+
+           <RadioButton
+               android:id="@+id/radio_step5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(5) Отказ от заключения договора с нашей стороны"/>
+
+           <RadioButton
+               android:id="@+id/radio_step6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(6) Отказ от заключения договора со стороны Контрагента"/>
+
+           <RadioButton
+               android:id="@+id/radio_step7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(7) В процессе исполнения Договора - этап поставки товаров"/>
+
+           <RadioButton
+               android:id="@+id/radio_step8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(8) В процессе исполнения Договора - этап оказания услуг"/>
+
+           <RadioButton
+               android:id="@+id/radio_step9"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(9) Договор подписан, ожидание предоплаты"/>
+
+           <RadioButton
+               android:id="@+id/radio_step10"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(10) Договор подписан, ожидание предоплаты - оплаты товаров"/>
+
+           <RadioButton
+               android:id="@+id/radio_step11"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(11) Договор подписан, ожидание предоплаты - оплаты услуг"/>
+
+
+           <RadioButton
+               android:id="@+id/radio_step12"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(12) Ожидание частичной/полной оплаты - оплаты товаров"/>
+
+           <RadioButton
+               android:id="@+id/radio_step13"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(13) Ожидание частичной/полной оплаты - оплаты услуг"/>
+
+           <RadioButton
+               android:id="@+id/radio_step14"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(14) Ожидание полной оплаты по сделке"/>
+
+           <RadioButton
+               android:id="@+id/radio_step15"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(15) Подписание закрывающих документов - подписание актов"/>
+
+           <RadioButton
+               android:id="@+id/radio_step16"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(16) Подписание закрывающих документов - подписание накладных"/>
+
+           <RadioButton
+               android:id="@+id/radio_step17"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(17) Подписание закрывающих документов (актов и/или накладных)"/>
+
+           <RadioButton
+               android:id="@+id/radio_step18"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(18) Этап взыскания оплаты - направление Претензии"/>
+
+           <RadioButton
+               android:id="@+id/radio_step19"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(19) Этап взыскания оплаты - Суд"/>
+
+           <RadioButton
+               android:id="@+id/radio_step20"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(20) Этап взыскания оплаты - Исполнительное производство"/>
+
+           <RadioButton
+               android:id="@+id/radio_step21"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(21) Сделка завершена УСПЕШНО"/>
+
+           <RadioButton
+               android:id="@+id/radio_step22"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(22) Сделка завершена с проблемами"/>
+
+           <RadioButton
+               android:id="@+id/radio_step23"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(23) Сделка не завершена"/>
+
+           <RadioButton
+               android:id="@+id/radio_step24"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(24) Сделка не завершена - досрочное расторжение договора"/>
+
+           <RadioButton
+               android:id="@+id/radio_step25"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(25) Сделка не завершена - по нашей вине"/>
+
+           <RadioButton
+               android:id="@+id/radio_step26"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="24dp"
+               android:layout_weight="1"
+               android:text="(26) Сделка не завершена - по вине Заказчика"/>
+
+    </RadioGroup>
+
+    <!--endregion-->
+
+     
+     
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="25dp"
+        android:id="@+id/buttonaddsdelka"
+        android:text="Сохранить изменения"/>
+        
+        <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="17dp"
+        android:id="@+id/butondelsdelka"
+        android:text="Удалить сделку и документы"/>
+        
+        
+</LinearLayout>
+
+        

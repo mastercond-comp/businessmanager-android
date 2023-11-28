@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLContainer"
+    android:layout_width="1250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left|center"
+    android:background="#55e8f5e9"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить товар"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="10dp"
+        android:id="@+id/buttonaddtovarShablon"
+        android:text="Заменить данными из шаблонов"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название товара:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/tovar_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например: Обогреватель Ballu"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Модель товара:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/tovar_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например: XYZ-20"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Краткое описание товара:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/tovar_opisanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например: Для комнаты площадью до 15 кв.м"'
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Полное описание товара:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/tovar_opisanie_polnoe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Цена товара:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/tovar_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например: 100"'
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Закупочная цена:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/tovar_zakupcena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например: 100"'
+        />
+
+    <RadioGroup
+        android:id="@+id/radiogroupVALUTA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+
+        <RadioButton
+            android:id="@+id/radio_ruble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:text="Рубль"/>
+
+        <RadioButton
+            android:id="@+id/radio_dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:text="Доллар"/>
+
+        <RadioButton
+            android:id="@+id/radio_euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:text="Евро"/>
+
+
+    </RadioGroup>
+
+
+
+
+    <Switch
+        android:id="@+id/switchwww"
+        style="@style/SwitchGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Отображать на сайте:"
+        android:checked="true"
+        android:textOff="Нет"
+        android:textOn="Да"/>
+
+    <Switch
+        android:id="@+id/switchshablon"
+        style="@style/SwitchGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Отображать в списке шаблонов:"
+        android:checked="false"
+        android:textOff="Нет"
+        android:textOn="Да"/>
+
+    <Switch
+        android:id="@+id/switchindextop"
+        style="@style/SwitchGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Отображать в списке популярных товаров на главной:"
+        android:checked="false"
+        android:textOff="Нет"
+        android:textOn="Да"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Имя файла для сохрания на диск:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/tovar_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint='например: tovar.php"'
+        />
+
+
+    <!--region ТОВАР-СКЛАД-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowtovarsklad"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ТОВАР НА СКЛАДЕ"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/sectiontovarsklad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Место на складе:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_skladmesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Ряд 1 Место 08"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Остаток, ед.(включая резерв):" />
+
+        <EditText
+            android:id="@+id/tovar_ostatok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Наличие и сроки поставки (для сайта):" />
+
+        <EditText
+            android:id="@+id/tovar_nalichie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "В наличии много, срок поставки 1 рабочий день с момента оплаты"'
+            />
+
+
+    </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region ХАРАКТЕРИСТИКИ ТОВАРА-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowcharakteristiki"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ХАРАКТЕРИСТИКИ ТОВАРА"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/sectioncharakteristiki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 1:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 1:" />
+
+        <EditText
+            android:id="@+id/tovar_zn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 2:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 2:" />
+
+        <EditText
+            android:id="@+id/tovar_zn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 3:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 3:" />
+
+        <EditText
+            android:id="@+id/tovar_zn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 4:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 4:" />
+
+        <EditText
+            android:id="@+id/tovar_zn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 5:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 5:" />
+
+        <EditText
+            android:id="@+id/tovar_zn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 6:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 6:" />
+
+        <EditText
+            android:id="@+id/tovar_zn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 7:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 7:" />
+
+        <EditText
+            android:id="@+id/tovar_zn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 8:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 8:" />
+
+        <EditText
+            android:id="@+id/tovar_zn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 9:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 9:" />
+
+        <EditText
+            android:id="@+id/tovar_zn9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 10:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 10:" />
+
+        <EditText
+            android:id="@+id/tovar_zn10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 11:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 11:" />
+
+        <EditText
+            android:id="@+id/tovar_zn11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 12:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 12:" />
+
+        <EditText
+            android:id="@+id/tovar_zn12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 13:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 13:" />
+
+        <EditText
+            android:id="@+id/tovar_zn13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 14:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 14:" />
+
+        <EditText
+            android:id="@+id/tovar_zn14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 15:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 15:" />
+
+        <EditText
+            android:id="@+id/tovar_zn15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 16:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 16:" />
+
+        <EditText
+            android:id="@+id/tovar_zn16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 17:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 17:" />
+
+        <EditText
+            android:id="@+id/tovar_zn17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 18:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 18:" />
+
+        <EditText
+            android:id="@+id/tovar_zn18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 19:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 19:" />
+
+        <EditText
+            android:id="@+id/tovar_zn19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название характеристики 20:"
+            />
+
+
+        <EditText
+            android:id="@+id/tovar_chname20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Габариты ШхВХГ"'
+            android:inputType="textMultiLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение характеристики 20:" />
+
+        <EditText
+            android:id="@+id/tovar_zn20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "100x100x200 мм"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Документы товара (инструкции, сертификаты соответствия и т.д.):" />
+
+        <EditText
+            android:id="@+id/tovar_documentsaccordion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, перечень ссылок на инструкции, каталоги и т.д.'
+            />
+
+    </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region ИЗОБРАЖЕНИЯ И ВИДЕО ТОВАРА-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowmedia"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ИЗОБРАЖЕНИЕ И ВИДЕО ТОВАРА НА САЙТЕ"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sectionshowmedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ссылка на уменьшенное изображение товара для каталога:" />
+
+        <EditText
+            android:id="@+id/imgtovara_katalog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (1):" />
+
+        <EditText
+            android:id="@+id/imgtovara1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (2):" />
+
+        <EditText
+            android:id="@+id/imgtovara2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (3):" />
+
+        <EditText
+            android:id="@+id/imgtovara3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (4):" />
+
+        <EditText
+            android:id="@+id/imgtovara4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (5):" />
+
+        <EditText
+            android:id="@+id/imgtovara5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (6):" />
+
+        <EditText
+            android:id="@+id/imgtovara6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (7):" />
+
+        <EditText
+            android:id="@+id/imgtovara7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (8):" />
+
+        <EditText
+            android:id="@+id/imgtovara8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (9):" />
+
+        <EditText
+            android:id="@+id/imgtovara9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на изображение товара (10):" />
+
+        <EditText
+            android:id="@+id/imgtovara10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/images/tovar.jpg"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на видео товара (1):" />
+
+        <EditText
+            android:id="@+id/videotovara1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/video/tovar.mp4"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на видео товара (2):" />
+
+        <EditText
+            android:id="@+id/videotovara2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/video/tovar.mp4"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на видео товара (3):" />
+
+        <EditText
+            android:id="@+id/videotovara3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/video/tovar.mp4"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ПИКТОГРАММЫ ОСНОВНЫХ ХАРАКТЕРИСТИК ТОВАРА (6 шт ПОД СЛАЙДЕРОМ)"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ссылка на изображение характеристики 1:" />
+
+        <EditText
+            android:id="@+id/chzlink1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/img/img1.webp"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название характеристики 1:" />
+
+        <EditText
+            android:id="@+id/chzname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Компактные размеры"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ссылка на изображение характеристики 2:" />
+
+        <EditText
+            android:id="@+id/chzlink2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/img/img2.webp"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название характеристики 2:" />
+
+        <EditText
+            android:id="@+id/chzname2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Удобный дизайн"'
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ссылка на изображение характеристики 3:" />
+
+        <EditText
+            android:id="@+id/chzlink3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/img/img3.webp"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название характеристики 3:" />
+
+        <EditText
+            android:id="@+id/chzname3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Эргономичность"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ссылка на изображение характеристики 4:" />
+
+        <EditText
+            android:id="@+id/chzlink4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/img/img4.webp"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название характеристики 4:" />
+
+        <EditText
+            android:id="@+id/chzname4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Высокий потенциал"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ссылка на изображение характеристики 5:" />
+
+        <EditText
+            android:id="@+id/chzlink5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/img/img5.webp"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название характеристики 5:" />
+
+        <EditText
+            android:id="@+id/chzname5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Малый объем"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ссылка на изображение характеристики 6:" />
+
+        <EditText
+            android:id="@+id/chzlink6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/img/img6.webp"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название характеристики 6:" />
+
+        <EditText
+            android:id="@+id/chzname6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Небольшая мощность"'
+            />
+
+
+    </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region ПОХОЖИЕ ТОВАРЫ-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowpohozhtovari"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ПОХОЖИЕ ТОВАРЫ"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/sectiontovarpohozhie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+
+        <Button
+            style="@style/ButtonPAGE"
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonaddpohozhijtovar"
+            android:text="Добавить похожий товар"/>
+
+        <ListView
+            android:id="@+id/ListViewPOHOZHIETOVARI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="true" />
+
+
+    </LinearLayout>
+
+    <!--endregion-->
+
+    <!--region РАСПОЛОЖЕНИЕ И ОТОБРАЖЕНИЕ НА САЙТЕ-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            style="@style/ButtonRASKRITIE"
+            android:id="@+id/buttonshowwww"
+            android:text=">" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="РАСПОЛОЖЕНИЕ И ОТОБРАЖЕНИЕ НА САЙТЕ"
+            android:textSize="16dp"
+            android:textStyle="bold"  />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sectiontovarwww"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ССЫЛКА НА ЭТУ СТРАНИЦУ ТОВАРА:" />
+
+        <EditText
+            android:id="@+id/tovarlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/tovar/tovar1.php"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на файл со своими CSS-стилями:" />
+
+        <EditText
+            android:id="@+id/tovarcustomcss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/css/my.css"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Уровень 1 (после главной):" />
+
+        <EditText
+            android:id="@+id/tovarnavlevel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Каталог теплых полов"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на уровень 1 (после главной):" />
+
+        <EditText
+            android:id="@+id/tovarnavlevel1link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/poli.php"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Уровень 2:" />
+
+        <EditText
+            android:id="@+id/tovarnavlevel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "ИК маты"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на уровень 2:" />
+
+        <EditText
+            android:id="@+id/tovarnavlevel2link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/poli/ikmati.php"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Уровень 3:" />
+
+        <EditText
+            android:id="@+id/tovarnavlevel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "ИК маты Schneider"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ссылка на уровень 3:" />
+
+        <EditText
+            android:id="@+id/tovarnavlevel3link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "/poli/ikmati/ikmati-schneider.php"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ЗАГОЛОВОК СТРАНИЦЫ В БРАУЗЕРЕ:" />
+
+        <EditText
+            android:id="@+id/tovarzagolovokwww"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Теплый пол Schneider"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="КЛЮЧЕВЫЕ СЛОВА для поисковиков (через запятую):" />
+
+
+        <EditText
+            android:id="@+id/tovarklslova"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "теплый пол, ик пол, schneider, нагревательный мат"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='Описание страницы для поисковиков (meta name="description"):' />
+
+
+        <EditText
+            android:id="@+id/tovarmetadescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Страница с описанием теплого пола (ИК маты) Schneider"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='Основной шрифт страницы:' />
+
+
+        <EditText
+            android:id="@+id/tovarmainfont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Tahoma"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='Дополнительный шрифт текста на странице (модель и цена товара):' />
+
+
+        <EditText
+            android:id="@+id/tovardopfont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "Tahoma"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='Цвет текста заголовка страницы:' />
+
+
+        <EditText
+            android:id="@+id/tovarzagolovoktextcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "green или цветовой код"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='Цвет текста категорий товаров:' />
+
+
+        <EditText
+            android:id="@+id/tovarkategoriitextcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "green или цветовой код"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='Цвет цены товара:' />
+
+
+        <EditText
+            android:id="@+id/tovarpricetextcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "green или цветовой код"'
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='Цвет фона страницы:' />
+
+
+        <EditText
+            android:id="@+id/backgroundcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "white или цветовой код"'
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='Цвет текста навигационных ссылок:' />
+
+
+        <EditText
+            android:id="@+id/navlinktextcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint='например, "blue или цветовой код"'
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--endregion-->
+
+
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="25dp"
+        android:id="@+id/buttonaddtovar"
+        android:text="Сохранить изменения и вернуться к списку товаров"/>
+
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="25dp"
+        android:id="@+id/buttonsaveupload"
+        android:text="Сохранить изменения и выгрузить на сайт"/>
+
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="25dp"
+        android:id="@+id/buttonsavedisk"
+        android:text="Сохранить изменения и записать PHP-файл на диск"/>
+
+    <Button
+        style="@style/ButtonPAGE"
+        android:layout_marginTop="25dp"
+        android:id="@+id/buttondel"
+        android:text="Удалить товар"/>
+
+    <EditText
+        android:id="@+id/tovar_valuta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/tovar_etswitch_www"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/tovar_etswitch_shablon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/shablontovaraid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/tovar_etswitch_indextop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>
+
+
